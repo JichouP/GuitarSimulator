@@ -1,3 +1,8 @@
-dth: 80
-singleQuote: true
-trailingComma: es5inode": "nodemon public/server.js"
+{
+  "useTabs": false,
+  "printWidth": 80,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "jsxBracketSameLine": false
+}
