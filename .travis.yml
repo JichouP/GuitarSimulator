@@ -1,0 +1,10 @@
+nguage: node_js
+node_js:
+- "node"
+cache: yarn
+before_install:
+- yarn install
+install:
+- yarn build
+script:
+- yarn test
