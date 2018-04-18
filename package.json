@@ -15,7 +15,8 @@
   "dependencies": {
     "pixi.js": "^4.7.3",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "react-pixi": "^0.9.16"
   },
   "devDependencies": {
     "babel": "^6.23.0",

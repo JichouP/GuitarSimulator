@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry: path.resolve('src') + '/index.jsx',
   output: {
-    path: path.resolve('public'),
+    path: path.resolve('dist'),
     filename: 'bundle.js'
   },
   module: {
@@ -18,9 +18,6 @@ module.exports = {
   resolve: {
     extensions: ['.jsx', '.js'],
   },
-  // optimization: {
-  //   minimize: true,
-  // },
   devtool: 'source-map',
   target: 'web'
 };
