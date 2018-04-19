@@ -1,4 +1,6 @@
 import React from 'react';
-import ReactDom from'react-dom';
-import ReactPIXI from 'react-pixi';
-import PIXI from 'pixi.js';
+import { render } from 'react-dom';
+import { Sprite, Stage } from 'react-pixi-fiber';
+import App from './app';
+
+render(<App />, document.getElementById('root'));
