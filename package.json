@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --mode production",
-    "start": "webpack-serve --config webpack.config.js --port 3000 --log-level debug"
+    "start": "webpack-serve"
   },
   "repository": "git@github.com:JichouP/GuitarSimulator.git",
   "author": "JichouP",
