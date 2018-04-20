@@ -1,7 +1,0 @@
-{
-  "config": "./webpack.config.js",
-  "clipboard": false,
-  "log-level": "debug",
-  "host": "localhost",
-  "port": 3000
-}
