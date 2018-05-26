@@ -1,27 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Sprite, Stage } from 'react-pixi-fiber';
-import * as PIXI from 'pixi.js';
-// import App from './app';
-const kussy = './res/kussy.jpg';
-// import kussy from '../dist/res/kussy.jpg';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import { Sprite, Stage } from 'react-pixi-fiber';
+// import * as PIXI from 'pixi.js';
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Switch,
+//   Link,
+//   withRouter,
+// } from 'react-router-dom';
 
-const Kussy = props => {
-  return (
-    <Sprite
-      texture={PIXI.Texture.fromImage(kussy)}
-      {...props}
-    />
-  );
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <Stage width={800} height={600} options={{ backgroundColor: 0x10bb99 }}>
+//       </Stage>
+//     );
+//   }
+// }
+// ReactDOM.render(<App />, document.getElementById('root'));
+
+const audioSprite = document.getElementById('audio');
+const spriteData = {
+  a: {
+    start: 0,
+    length: 4,
+  },
+  b: {
+    start: 4,
+    length: 4,
+  },
 };
 
-class App extends React.Component {
-  render() {
-    return (
-      <Stage width={800} height={600} options={{ backgroundColor: 0x10bb99 }}>
-        <Kussy x={100} y={100} />
-      </Stage>
-    );
-  }
-}
-ReactDOM.render(<App />, document.getElementById('root'));
+audioSprite.currentTime = spriteData.a.start;
+// audioSprite.play();
