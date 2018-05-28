@@ -1,36 +1,34 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import { Sprite, Stage } from 'react-pixi-fiber';
-// import * as PIXI from 'pixi.js';
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Switch,
-//   Link,
-//   withRouter,
-// } from 'react-router-dom';
+//React
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Sprite, Stage } from 'react-pixi-fiber';
+import * as PIXI from 'pixi.js';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  withRouter,
+} from 'react-router-dom';
+//sound
+import { Howl, Howler } from 'howler';
+import posToKey from './posToKey';
+import play from './play';
+import beat from './beat';
 
-// class App extends React.Component {
-//   render() {
-//     return (
-//       <Stage width={800} height={600} options={{ backgroundColor: 0x10bb99 }}>
-//       </Stage>
-//     );
-//   }
-// }
-// ReactDOM.render(<App />, document.getElementById('root'));
+// play(4000, posToKey(1, 0), posToKey(2, 0), posToKey(3, 0), posToKey(4, 0), posToKey(5, 0), posToKey(6, 0));
 
-const audioSprite = document.getElementById('audio');
-const spriteData = {
-  a: {
-    start: 0,
-    length: 4,
-  },
-  b: {
-    start: 4,
-    length: 4,
-  },
-};
+beat(
+  120,
+  8,
+  '10001011011010111000101101101011',
+  posToKey(1, 0),
+  posToKey(2, 1),
+  posToKey(3, 2),
+  posToKey(4, 3),
+  // posToKey(5, 3),
+  // posToKey(6, 0),
+);
 
-audioSprite.currentTime = spriteData.a.start;
+// audioSprite.currentTime = spriteData.a.start;
 // audioSprite.play();
