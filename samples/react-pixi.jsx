@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Sprite, Stage } from 'react-pixi-fiber';
 import * as PIXI from 'pixi.js';
-// import App from './app';
 const kussy = './res/kussy.jpg';
-// import kussy from '../dist/res/kussy.jpg';
 
 const Kussy = props => {
   return (
