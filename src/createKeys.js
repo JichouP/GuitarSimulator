@@ -32,7 +32,7 @@
     [],
     number.map(e => key.map(f => f + e))
   );
-  let time = -12000;
+  let time = -11500;
   const length = 4000;
   for (const e of keys) {
     text += `${e}:[${time},${length}],`;

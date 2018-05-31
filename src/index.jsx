@@ -24,10 +24,14 @@ const chord = new Chord();
 
 (async () => {
   await sleep(1000);
-  await beat(120, 8, '1000101101101011', ...chord.FM7);
-  await beat(120, 8, '1000101101101011', ...chord.FM7);
-  await beat(120, 8, '1000101101101011', ...chord.CM7);
-  await beat(120, 8, '1000101101101011', ...chord.CM7);
+  await beat(120, 8, '10110111', ...chord.C);
+  await beat(120, 8, '10110111', ...chord.Am);
+  await beat(120, 8, '10110111', ...chord.F);
+  await beat(120, 8, '10110111', ...chord.G);
+  await beat(120, 8, '10110111', ...chord.Em);
+  await beat(120, 8, '10110111', ...chord.Am);
+  await beat(120, 8, '10110111', ...chord.F);
+  await beat(120, 8, '10110111', ...chord.G);
 })();
 
 // audioSprite.currentTime = spriteData.a.start;

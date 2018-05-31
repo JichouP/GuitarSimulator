@@ -1,7 +1,7 @@
 import play from './play';
 
 export default async (bpm, beat, rhythm, ...chord) => {
-  const beatLength = 60 * 1000 / bpm / beat * 2;
+  const beatLength = 60 * 1000 / bpm / beat * 4;
   const length = [];
   for (let i = rhythm.length - 1, count = 0; i >= 0; i--) {
     if (eval(rhythm[i])) {
@@ -15,7 +15,7 @@ export default async (bpm, beat, rhythm, ...chord) => {
   }
   for (let i = 0; i < rhythm.length; i++) {
     if (eval(length[i])) {
-      await play(beatLength * (length[i] + 1), ...chord);
+      await play(beatLength * length[i], ...chord);
     }
   }
 };
